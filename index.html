@@ -5,7 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Simple Calculator</title>
 	<link rel="stylesheet" href="styles.css" />
 	<script src="scripts.js" defer></script>
 </head>
@@ -13,38 +13,36 @@
 <body>
 	<div id="container">
 		<div id="calculator">
-			<div class="screen">
-			</div>
-			<div class="buttons-container">
-				<div class="button-wrapper">
-					<button type="button" value="c">C</button>
-					<button type="button" value="7">7</button>
-					<button type="button" value="4">4</button>
-					<button type="button" value="1">1</button>
-					<button type="button" value="0">0</button>
+			<form id="calculator-form">
+				<div class="screen">
+					<input type="text" name="screen"/>
 				</div>
-				<div class="button-wrapper">
-					<button type="button" value="sqrt">sqrt</button>
-					<button type="button" value="8">8</button>
-					<button type="button" value="5">5</button>
-					<button type="button" value="2">2</button>
-					<button type="button" value=".">.</button>
+				<div class="buttons">
+					<input type="button" value="+"/>
+					<input type="button" value="7"/>
+					<input type="button" value="4"/>
+					<input type="button" value="1"/>
+					<input type="button" value="0"/>
 				</div>
-				<div class="button-wrapper">
-					<button type="button" value="-+">-+</button>
-					<button type="button" value="9">9</button>
-					<button type="button" value="6">6</button>
-					<button type="button" value="3">3</button>
-					<button type="button" value="=">=</button>
+				<div class="buttons">
+					<input type="button" value="-"/>
+					<input type="button" value="8"/>
+					<input type="button" value="5"/>
+					<input type="button" value="2"/>
+					<input type="button" value="."/>
 				</div>
-				<div class="button-wrapper">
-					<button type="button" value="%">%</button>
-					<button type="button" value="/">/</button>
-					<button type="button" value="X">X</button>
-					<button type="button" value="-">-</button>
-					<button type="button" value="+">+</button>
+				<div class="buttons">
+					<input type="button" value="*"/>
+					<input type="button" value="9"/>
+					<input type="button" value="6"/>
+					<input type="button" value="3"/>
+					<input type="button" value="C"/>
 				</div>
-			</div>
+				<div class="buttons">
+					<input type="button" value="/"/>
+					<input type="button" value="=" class="equal"/>
+				</div>
+			</form>
 		</div>
 	</div>
 </body>
